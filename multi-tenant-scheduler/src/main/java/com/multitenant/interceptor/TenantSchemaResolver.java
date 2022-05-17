@@ -1,4 +1,4 @@
-package com.codingworld.multitenant.interceptor;
+package com.multitenant.interceptor;
 
 import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 import org.springframework.stereotype.Component;

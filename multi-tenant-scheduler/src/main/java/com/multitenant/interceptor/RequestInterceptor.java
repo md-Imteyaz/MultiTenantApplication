@@ -1,4 +1,4 @@
-package com.codingworld.multitenant.interceptor;
+package com.multitenant.interceptor;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;

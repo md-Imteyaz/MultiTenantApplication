@@ -1,4 +1,4 @@
-package com.codingworld.multitenant.controller;
+package com.multitenant.controller;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.codingworld.multitenant.bean.Student;
-import com.codingworld.multitenant.service.StudentService;
+import com.multitenant.bean.Student;
+import com.multitenant.service.StudentService;
 
 @RestController
 
@@ -43,14 +43,14 @@ public class StudentController {
     }
 
    
-    @GetMapping("getStudentByName/{name}")
+    @GetMapping("/getStudentByName/{name}")
     public ResponseEntity<Student> get(@PathVariable(value = "name") String name) {
     	Student  student= studentService.getByName(name);
         return new ResponseEntity<>(student, HttpStatus.OK);
     }
 
     
-    @DeleteMapping("deletebyname/{name}")
+    @DeleteMapping("/deletebyname/{name}")
     public ResponseEntity<Student> delete(@PathVariable(value = "name") String name) {
     	studentService.delete(name);
         return new ResponseEntity<>(HttpStatus.OK);

@@ -1,10 +1,11 @@
-package com.codingworld.multitenant.impl;
+package com.multitenant.impl;
 
-import com.codingworld.multitenant.config.TenantDataSource;
 import org.hibernate.engine.jdbc.connections.spi.AbstractDataSourceBasedMultiTenantConnectionProviderImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
+
+import com.multitenant.config.TenantDataSource;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;

@@ -1,4 +1,4 @@
-package com.codingworld.multitenant.interceptor;
+package com.multitenant.interceptor;
 
 public class TenantContext {
     private static ThreadLocal<String> currentTenant = new InheritableThreadLocal<>();

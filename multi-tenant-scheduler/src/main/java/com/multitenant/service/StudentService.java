@@ -1,7 +1,8 @@
-package com.codingworld.multitenant.service;
+package com.multitenant.service;
 
-import com.codingworld.multitenant.bean.Student;
-import com.codingworld.multitenant.repo.StudentRepository;
+import com.multitenant.bean.Student;
+import com.multitenant.repo.StudentRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

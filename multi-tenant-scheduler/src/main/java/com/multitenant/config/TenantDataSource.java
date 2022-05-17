@@ -1,9 +1,10 @@
-package com.codingworld.multitenant.config;
+package com.multitenant.config;
 
-import com.codingworld.multitenant.repo.DataSourceConfigRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.stereotype.Component;
+
+import com.multitenant.repo.DataSourceConfigRepository;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Priority;

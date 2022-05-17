@@ -1,4 +1,4 @@
-package com.codingworld.multitenant.config;
+package com.multitenant.config;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

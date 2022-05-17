@@ -1,4 +1,4 @@
-package com.codingworld.multitenant.bean;
+package com.multitenant.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -10,8 +10,6 @@ import java.io.Serializable;
 @Table(name = "student")
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-//@FilterDef(name = "tenantFilter", parameters = {@ParamDef(name = "tenantId", type = "string")})
-//@Filter(name = "tenantFilter", condition = "tenant_id = :tenantId")
 public class Student implements Serializable {
     private static final long serialVersionUID = -4551953276601557391L;
     @Id

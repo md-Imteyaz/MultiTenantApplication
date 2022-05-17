@@ -1,8 +1,9 @@
-package com.codingworld.multitenant.repo;
+package com.multitenant.repo;
 
-import com.codingworld.multitenant.config.DataSourceConfig;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.multitenant.config.DataSourceConfig;
+
 public interface DataSourceConfigRepository extends JpaRepository<DataSourceConfig, Long> {
-    DataSourceConfig findByName(String name);
+	DataSourceConfig findByName(String name);
 }
